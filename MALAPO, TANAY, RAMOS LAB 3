@@ -1,0 +1,42 @@
+public class Clock {
+
+    // Convert seconds to minutes
+    public static double SecondsToMinutes(int seconds) {
+        return seconds / 60.0; // 60 seconds in a minute
+    }
+
+    // Convert seconds to hours
+    public static double SecondsToHours(int seconds) {
+        return seconds / 3600.0; // 3600 seconds in an hour
+    }
+
+    // Convert minutes to seconds
+    public static int MinutesToSeconds(int minutes) {
+        return minutes * 60; // 60 seconds in a minute
+    }
+
+    // Convert minutes to hours
+    public static double MinutesToHours(int minutes) {
+        return minutes / 60.0; // 60 minutes in an hour
+    }
+
+    // Convert hours to seconds
+    public static int HoursToSeconds(int hours) {
+        return hours * 3600; // 3600 seconds in an hour
+    }
+
+    // Convert hours to minutes
+    public static int HoursToMinutes(int hours) {
+        return hours * 60; // 60 minutes in an hour
+    }
+
+    // Main method to test conversions
+    public static void main(String[] args) {
+        System.out.println("120 seconds to minutes: " + SecondsToMinutes(120)); // 2.0
+        System.out.println("7200 seconds to hours: " + SecondsToHours(7200)); // 2.0
+        System.out.println("5 minutes to seconds: " + MinutesToSeconds(5)); // 300
+        System.out.println("120 minutes to hours: " + MinutesToHours(120)); // 2.0
+        System.out.println("3 hours to seconds: " + HoursToSeconds(3)); // 10800
+        System.out.println("4 hours to minutes: " + HoursToMinutes(4)); // 240
+    }
+}
